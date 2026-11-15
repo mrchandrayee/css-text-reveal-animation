@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08080c">
+  <title>CSS Text Reveal Animation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="title-bar">CSS Text Reveal Animation</header>
+
+    <section class="preview-card" aria-label="Text reveal preview">
+      <div class="preview-stage" id="previewStage">
+        <div class="text-wrap" id="textWrap">
+          <span class="reveal-text" id="revealText">Creative Design</span>
+          <span class="mask-layer" id="maskLayer" aria-hidden="true"></span>
+        </div>
+      </div>
+      <nav class="tabs" aria-label="Choose a text reveal effect">
+        <button class="tab active" type="button" data-effect="clip">Clip</button>
+        <button class="tab" type="button" data-effect="blur">Blur</button>
+        <button class="tab" type="button" data-effect="mask">Mask</button>
+        <button class="tab" type="button" data-effect="letters">Letters</button>
+        <button class="tab" type="button" data-effect="flip">3D Flip</button>
+      </nav>
+    </section>
+
+    <section class="code-card" aria-live="polite">
+      <header class="code-heading" id="codeHeading">CLIP REVEAL</header>
+      <pre class="code-view"><code id="codeOutput"></code></pre>
+    </section>
+    <footer>PURE CSS TEXT ANIMATION · INTERACTIVE DEMO</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
